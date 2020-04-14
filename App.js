@@ -31,12 +31,10 @@ const App = () => {
     // (without file://) Emulator Throws - Stream closed.
     // (without file://) Real android device Throws -  -  read failed: EBADF (Bad file descriptor)
     // formData.append('file', {
-    //  uri: RNFS.DocumentDirectoryPath + '/' + 'fileThatExists.jpg',
+    //  uri: '/data/user/0/<package_name>/cache/fileThatExists.jpg',
     //   name: 'name.jpg',
     //   type: 'image/jpg',
     //   });
-
-    // This doesnt work either... -_- you guessed it, THROWS - Could not retrieve file for uri https://facebook.github.io/react/logo-og.png
 
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://www.google.com'); // the address really doesnt matter the error occures before the network request is even made.
